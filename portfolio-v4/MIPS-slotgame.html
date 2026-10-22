@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#140d11" media="(prefers-color-scheme: dark)">
+  <title>MIPS Slot Machine| Ariana Astorga Vega</title>
+  <meta name="description" content="Gambling Addict Simulator: a slot machine game written in MIPS assembly language using the MARS simulator for CS240 Computer Organization.">
+  <link rel="icon" href="images/profile.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script>document.documentElement.className += ' js';</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="site-title" href="index.html"><span>Ariana Astorga Vega</span></a>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="index.html#portfolio" class="active" aria-current="page">Portfolio</a>
+        <a href="resume.html">Resume</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page-wrap">
+    <!-- EDIT: sidebar profile (use Find & Replace to change it everywhere) -->
+    <aside class="sidebar">
+      <img class="avatar" src="images/profile.svg" alt="Ariana Astorga Vega">
+      <h2 class="author-name">Ariana Astorga Vega</h2>
+      <p class="author-bio">Computer Science student at SDSU building web projects with a focus on community impact. Bilingual in Spanish, with experience in front-end and back-end development!</p>
+      <ul class="author-links">
+        <li><span class="ico">📍</span>Oakland, San Diego, CA, United States</li>
+        <li><span class="ico">🏢</span>San Diego State University</li>
+        <li><span class="ico">✉️</span><a href="mailto:astorgavega.ariana@gmail.com">Email</a></li>
+        <li><span class="ico">⌨️</span><a href="https://github.com/ariana-av" rel="me">GitHub</a></li>
+        <!-- <li><span class="ico">💼</span><a href="https://www.linkedin.com/in/USERNAME" rel="me">LinkedIn</a></li> -->
+      </ul>
+    </aside>
+    <main id="main" class="content">
+      <article>
+        <p class="crumb"><a href="index.html#portfolio">← All projects</a></p>
+        <header class="page-header"><h1>MIPS Slot Machine</h1></header>
+        <p class="meta">CS240 Computer Organization · MIPS assembly language · MARS</p>
+        <p class="tags"><span class="tag">MIPS Assembly</span><span class="tag">MARS</span><span class="tag">Game</span><span class="tag">Bitmap Display</span><span class="tag">Keyboard MMIO</span></p>
+        <!-- CHANGE PICTURE: project screenshot. Save a screenshot of the Bitmap Display in images/ (for example images/slot-machine.png) and change the file name in src below (wide image, about 800x500) -->
+        <img class="hero-img" src="images/project-2.svg" alt="Screenshot of the slot machine">
+        <div class="prose">
+<h2>Overview</h2>
+<p>MIPS Slot Machine is a slot machine game written in MIPS assembly language and coded in the MARS simulator. I developed it as a project for my Computer Organization class, CS240. The game uses simulated credits only, and no real money is involved. It renders the reels, credit balance, controls and results on the Bitmap Display, and it receives player input through the Keyboard and Display MMIO Simulator.</p>
+
+<h2>Gameplay</h2>
+<ul>
+<li>The player begins with <strong>20 simulated credits</strong>.</li>
+<li>Each spin of the three reels costs <strong>1 credit</strong>.</li>
+<li>Two matching numbers return <strong>2 credits</strong>.</li>
+<li>Three matching numbers return <strong>10 credits</strong>.</li>
+</ul>
+
+<h2>Controls</h2>
+<table>
+<tr><th>Key</th><th>Action</th></tr>
+<tr><td><code>S</code></td><td>Spin the three reels</td></tr>
+<tr><td><code>R</code></td><td>Reset the game</td></tr>
+<tr><td><code>Q</code></td><td>Quit the game</td></tr>
+</table>
+
+<h2>Setup instructions</h2>
+<p>To run the game in MARS, open the Bitmap Display and the Keyboard and Display MMIO Simulator from the Tools menu. For the best experience, place the two windows side by side. Configure the Bitmap Display with the following settings, then connect both tools to the program before running it:</p>
+<table>
+<tr><th>Setting</th><th>Value</th></tr>
+<tr><td>Unit width and height in pixels</td><td>8 by 8</td></tr>
+<tr><td>Display width and height in pixels</td><td>512 by 512</td></tr>
+<tr><td>Base address for display</td><td><code>0x10008000</code> ($gp)</td></tr>
+</table>
+<p>Once the program is assembled and running, type your commands into the Keyboard MMIO Simulator. Press <code>S</code> to spin the reels.</p>
+
+<h2>Technical highlights</h2>
+<ul>
+<li>Written entirely in MIPS assembly language and developed in MARS</li>
+<li>Draws the reels, credit balance, controls and results directly to the Bitmap Display, starting at base address <code>0x10008000</code></li>
+<li>Reads keyboard input through memory-mapped I/O (MMIO)</li>
+<li>Implements game logic for credits, spin costs, payouts and reset</li>
+</ul>
+
+<h2>Course context</h2>
+<p>This project was completed for CS240, Computer Organization, at San Diego State University. It applied low-level programming concepts, including memory-mapped I/O and direct control of a display through memory addresses.</p>
+        </div>
+        <p class="project-links"><a class="button secondary" href="https://github.com/ariana-av">Source code</a></p>
+      </article>
+    </main>
+  </div>
+  <footer class="site-footer"><p>© 2026 Ariana Astorga Vega · Built with HTML, CSS &amp; JavaScript · Hosted on <a href="https://pages.github.com">GitHub Pages</a></p></footer>
+  <button class="to-top" type="button" aria-label="Back to top">↑</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

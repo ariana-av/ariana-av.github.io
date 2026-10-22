@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#140d11" media="(prefers-color-scheme: dark)">
+  <title>Ariana Astorga Vega | Portfolio</title>
+  <meta name="description" content="Portfolio, resume and CV of Ariana Astorga Vega">
+  <!-- CHANGE PICTURE: browser tab icon. Put your image in the images/ folder and change the file name below (small square image, PNG or SVG) -->
+  <link rel="icon" href="images/profile.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script>document.documentElement.className += ' js';</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="site-title" href="index.html"><span>Ariana Astorga Vega</span></a>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="index.html#portfolio" data-spy="portfolio">Portfolio</a>
+        <a href="resume.html">Resume</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page-wrap">
+    <!-- EDIT: sidebar profile (use Find & Replace to change it everywhere) -->
+    <aside class="sidebar">
+      <!-- CHANGE PICTURE: your profile photo. Put it in the images/ folder and change the file name below (square photo works best, e.g. 500x500) -->
+      <img class="avatar" src="images/profile.svg" alt="Ariana Astorga Vega">
+      <h2 class="author-name">Ariana Astorga Vega</h2>
+      <p class="author-bio">Computer Science student at SDSU building web projects with a focus on community impact. Bilingual in Spanish, with experience in front-end and back-end development!</p>
+      <ul class="author-links">
+        <li><span class="ico">📍</span>Oakland, San Diego, CA, United States</li>
+        <li><span class="ico">🏢</span>San Diego State University</li>
+        <li><span class="ico">✉️</span><a href="mailto:astorgavega.ariana@gmail.com">Email</a></li>
+        <li><span class="ico">⌨️</span><a href="https://github.com/ariana-av" rel="me">GitHub</a></li>
+        <!-- <li><span class="ico">💼</span><a href="https://www.linkedin.com/in/USERNAME" rel="me">LinkedIn</a></li> -->
+      </ul>
+    </aside>
+    <main id="main" class="content">
+      <article>
+        <header class="page-header"><h1>Hi, Ariana</h1></header>
+        <div class="prose">
+          <!-- EDIT: your short description -->
+          <p>I’m an undergraduate Computer Science major at San Diego State University, currently deepening my skills through Java, C++ and assembly language courses. I’m especially drawn to UX/UI design and enjoy pairing clean, thoughtful interfaces with solid code.</p>
+          <p>Browse my projects below, or check out my <a href="resume.html">resume</a> and <a href="cv.html">CV</a> for the full picture!</p>
+        </div>
+        <section id="portfolio">
+          <div class="prose"><h2>Portfolio</h2></div>
+          <div class="grid">
+
+            <article class="card reveal" style="--i:0">
+              <!-- CHANGE PICTURE: Oakland On Top card image. Put your screenshot in images/ and change the file name in src below (wide image, about 800x500) -->
+              <a class="card-media" href="oakland-on-top.html" tabindex="-1" aria-hidden="true"><img src="images/project-1.svg" alt="" loading="lazy"></a>
+              <div class="card-body">
+                <h3 class="card-title"><a href="oakland-on-top.html">Oakland On Top</a></h3>
+                <p>A website spotlighting Oakland's muralists and promoting Oakland Pride, built with VisionQuilt.</p>
+                <p class="tags"><span class="tag">Front-end</span><span class="tag">Figma</span><span class="tag">Social justice</span></p>
+              </div>
+            </article>
+
+            <article class="card reveal" style="--i:1">
+              <!-- CHANGE PICTURE: MIPS Slot Machine card image. Put your screenshot in images/ and change the file name in src below (wide image, about 800x500) -->
+              <a class="card-media" href="MIPS-slotgame.html" tabindex="-1" aria-hidden="true"><img src="images/project-2.svg" alt="" loading="lazy"></a>
+              <div class="card-body">
+                <h3 class="card-title"><a href="MIPS-slotgame.html">MIPS Slot Machine</a></h3>
+                <p>A slot machine game programmed in MIPS assembly language.</p>
+                <p class="tags"><span class="tag">MIPS Assembly</span><span class="tag">Game</span></p>
+              </div>
+            </article>
+
+            <!-- THIRD PROJECT CARD (hidden for now). To show it later, delete the opening comment marker above this line and the closing marker below the card.
+                 CHANGE PICTURE for this card: change the file name in the src below (wide image, about 800x500).
+            <article class="card reveal" style="--i:2">
+              <a class="card-media" href="project-three.html" tabindex="-1" aria-hidden="true"><img src="images/project-3.svg" alt="" loading="lazy"></a>
+              <div class="card-body">
+                <h3 class="card-title"><a href="project-three.html">Project Three</a></h3>
+                <p>Research, design or open-source work you are proud of.</p>
+                <p class="tags"><span class="tag">Research</span><span class="tag">Open source</span></p>
+              </div>
+            </article>
+            -->
+
+          </div>
+        </section>
+      </article>
+    </main>
+  </div>
+  <footer class="site-footer"><p>© 2026 Ariana Astorga Vega · Built with HTML, CSS &amp; JavaScript · Hosted on <a href="https://pages.github.com">GitHub Pages</a></p></footer>
+  <button class="to-top" type="button" aria-label="Back to top">↑</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
