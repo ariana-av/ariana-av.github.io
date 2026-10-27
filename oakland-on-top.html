@@ -8,8 +8,17 @@
   <meta name="theme-color" content="#140d11" media="(prefers-color-scheme: dark)">
   <title>Oakland On Top | Ariana Astorga Vega</title>
   <meta name="description" content="Oakland On Top: a website spotlighting Oakland's muralists, built in collaboration with VisionQuilt.">
+  <!-- CHANGE PICTURE: browser tab icon (small square image in the images/ folder) -->
   <link rel="icon" href="images/profile.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    /* Live site preview (you don't need to add this to main.css) */
+    .live-preview { position: relative; aspect-ratio: 16 / 10; margin: 16px 0 8px; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+      background: var(--surface) url("images/oakland-on-top.jpg") center / cover no-repeat; }
+    .live-preview iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: transparent; }
+    .preview-note { color: var(--muted); font-size: .9rem; margin: 0 0 8px; }
+    @media (max-width: 700px) { .live-preview { aspect-ratio: 3 / 4; } }
+  </style>
   <script>document.documentElement.className += ' js';</script>
 </head>
 <body>
@@ -29,6 +38,7 @@
   <div class="page-wrap">
     <!-- EDIT: sidebar profile (use Find & Replace to change it everywhere) -->
     <aside class="sidebar">
+      <!-- CHANGE PICTURE: your profile photo (square image in the images/ folder) -->
       <img class="avatar" src="images/profile.svg" alt="Ariana Astorga Vega">
       <h2 class="author-name">Ariana Astorga Vega</h2>
       <p class="author-bio">Computer Science student at SDSU building web projects with a focus on community impact. Bilingual in Spanish, with experience in front-end and back-end development.</p>
@@ -37,7 +47,7 @@
         <li><span class="ico">🏢</span>San Diego State University</li>
         <li><span class="ico">✉️</span><a href="mailto:astorgavega.ariana@gmail.com">Email</a></li>
         <li><span class="ico">⌨️</span><a href="https://github.com/ariana-av" rel="me">GitHub</a></li>
-        <li><span class="ico">💼</span><a href="https://www.linkedin.com/in/USERNAME" rel="me">LinkedIn</a></li>
+        <!-- <li><span class="ico">💼</span><a href="https://www.linkedin.com/in/USERNAME" rel="me">LinkedIn</a></li> -->
       </ul>
     </aside>
     <main id="main" class="content">
@@ -46,7 +56,13 @@
         <header class="page-header"><h1>Oakland On Top</h1></header>
         <p class="meta">June – July 2024 · Co-founder &amp; front-end developer</p>
         <p class="tags"><span class="tag">Front-end</span><span class="tag">Figma</span><span class="tag">JavaScript</span><span class="tag">HTML &amp; CSS</span><span class="tag">Social justice</span></p>
-        <img class="hero-img" src="images/project-1.svg" alt="Oakland On Top project preview">
+
+        <!-- LIVE SITE PREVIEW: the real Oakland On Top website, embedded. The screenshot (images/oakland-on-top.jpg) shows while it loads or if it can't load. -->
+        <div class="live-preview">
+          <iframe src="https://ariana-av.github.io/Oakland-On-Top/" title="Live preview of the Oakland On Top website" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+        </div>
+        <p class="preview-note">Live preview of the site. <a href="https://ariana-av.github.io/Oakland-On-Top/">Open the full site in a new tab →</a></p>
+
         <div class="prose">
 <h2>What is Oakland On Top?</h2>
 <p>Oakland On Top spotlights the incredible talents of Oakland's muralists. By showcasing their work, we hope to bring more attention to the city's vibrant art scene and give these artists the recognition they deserve. The project includes an online gallery and a showcase of murals around Oakland.</p>
@@ -58,6 +74,14 @@
 <h2>Why murals?</h2>
 <p>We chose to spotlight muralists because we believe in the value of community and the role of public art in advocating for social justice, especially in Oakland. Murals often reflect the struggles, dreams and resilience of the communities they inhabit. By promoting these works, we give a voice to underrepresented artists and make sure their messages reach a wider audience.</p>
 
+<h2>What's on the site</h2>
+<ul>
+<li>A mural gallery organized into collections: Distinguished gems, Downtown Oakland love, and On the up and coming</li>
+<li>Pages for <a href="https://ariana-av.github.io/Oakland-On-Top/aboutus.html">About us</a>, <a href="https://ariana-av.github.io/Oakland-On-Top/team.html">Team</a>, <a href="https://ariana-av.github.io/Oakland-On-Top/collab.html">Collaboration</a> and <a href="https://ariana-av.github.io/Oakland-On-Top/more.html">more art</a></li>
+<li>A spotlight on local organizations, including Vision Quilt</li>
+<li>A way to support the project through donations</li>
+</ul>
+
 <h2>My role</h2>
 <ul>
 <li>Co-founded the Oakland On Top project</li>
@@ -66,9 +90,12 @@
 </ul>
 
 <h2>Collaboration &amp; credits</h2>
-<p>This project was created in collaboration with <strong>VisionQuilt</strong>. It was transferred from Glitch and is owned by Ariana Astorga Vega and Komogodje Bagayoko.</p>
+<p>This project was created in collaboration with <strong>VisionQuilt</strong>. It was co-founded by Ariana Astorga Vega and Komogodje Bagayoko, who own the project, and it was transferred from Glitch to GitHub Pages. Special thanks to VisionQuilt, Mission Bit, Techlink and Oak Pride.</p>
         </div>
-        <p class="project-links"><a class="button secondary" href="https://github.com/ariana-av">Source code</a></p>
+        <p class="project-links">
+          <a class="button" href="https://ariana-av.github.io/Oakland-On-Top/">Live demo</a>
+          <a class="button secondary" href="https://github.com/ariana-av/Oakland-On-Top">Source code</a>
+        </p>
       </article>
     </main>
   </div>
